@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="231" id="KGk-i7-Jjw" customClass="NoteViewCell" customModule="NotesApp_MVVM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="558" height="231"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="558" height="231"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TeE-J6-Jso">
+                        <rect key="frame" x="10" y="10" width="538" height="211"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="noteViewCell" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66C-u6-9ly">
+                                <rect key="frame" x="5" y="5" width="528" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="wJ1-OO-qbA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scz-fB-2hX">
+                                <rect key="frame" x="5" y="35" width="528" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="lgk-zq-jph"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="scz-fB-2hX" firstAttribute="top" secondItem="66C-u6-9ly" secondAttribute="bottom" constant="5" id="CNM-OS-jkT"/>
+                            <constraint firstItem="scz-fB-2hX" firstAttribute="leading" secondItem="TeE-J6-Jso" secondAttribute="leading" constant="5" id="WWC-eK-SNv"/>
+                            <constraint firstItem="66C-u6-9ly" firstAttribute="top" secondItem="TeE-J6-Jso" secondAttribute="top" constant="5" id="ZHG-Nj-VMh"/>
+                            <constraint firstItem="66C-u6-9ly" firstAttribute="leading" secondItem="TeE-J6-Jso" secondAttribute="leading" constant="5" id="kPZ-pa-qJy"/>
+                            <constraint firstAttribute="trailing" secondItem="66C-u6-9ly" secondAttribute="trailing" constant="5" id="oxG-b8-O24"/>
+                            <constraint firstAttribute="trailing" secondItem="scz-fB-2hX" secondAttribute="trailing" constant="5" id="vRJ-F6-3SL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="TeE-J6-Jso" secondAttribute="trailing" constant="10" id="DYv-oh-ipv"/>
+                    <constraint firstItem="TeE-J6-Jso" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Hs7-M7-UBF"/>
+                    <constraint firstItem="TeE-J6-Jso" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="UIh-sz-0O8"/>
+                    <constraint firstAttribute="bottom" secondItem="TeE-J6-Jso" secondAttribute="bottom" constant="10" id="V70-Hf-QCm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descriptionLable" destination="scz-fB-2hX" id="Wud-MS-kAW"/>
+                <outlet property="titleLable" destination="66C-u6-9ly" id="kaR-G1-dmI"/>
+                <outlet property="viewCell" destination="TeE-J6-Jso" id="9YA-R4-bjt"/>
+            </connections>
+            <point key="canvasLocation" x="320.61068702290078" y="86.267605633802816"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

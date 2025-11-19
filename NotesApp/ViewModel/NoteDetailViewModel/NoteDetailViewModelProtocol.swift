@@ -9,14 +9,9 @@ import Foundation
 
 
 protocol NoteDetailViewModelProtocol {
-    
+    var reloadUI: (() -> ())? {get set}
     var noteEdit: Notes? {get set}
-    var onAdd: ((Notes) -> Void)? {get set}
-    var onUpdate: ((Notes, String, String, String) -> Void)? {get set}
-    var onDelete: (() -> Void)? {get set}
-    
     func loadNoteData(noteEdit: Notes?) -> String
-    
     func handleDataNoteDetail( noteEdit: Notes?, contentNote: String)
     func splitString(_ text: String) -> [String]
 }

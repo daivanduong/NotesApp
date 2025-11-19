@@ -47,33 +47,20 @@ class NotesListViewModel: NotesListViewModelProtocol {
         updateNoteCountLabel()
       }
       // Load
-      func loadListNote(with request: NSFetchRequest<Notes> = Notes.fetchRequest()) { 
-          let request: NSFetchRequest<Notes> = Notes.fetchRequest()
-          let sort = NSSortDescriptor(key: "timeCreated", ascending: false)
-          request.sortDescriptors = [sort]
+    func loadListNote() {
+        let request: NSFetchRequest<Notes> = Notes.fetchRequest()
+        let sort = NSSortDescriptor(key: "timeCreated", ascending: false)
+        request.sortDescriptors = [sort]
           
-          do {
-              listNotes =  try context.fetch(request)
+        do {
+            listNotes =  try context.fetch(request)
               
-          } catch {
-              print("error: \(error)")
-          }
-          updateNoteCountLabel()
+        } catch {
+            print("error: \(error)")
+        }
+        updateNoteCountLabel()
       }
     
-    // Add
-    func addNote(_ note: Notes) {
-        saveNote()
-    }
-       
-    // Update
-    func updateNote(_ note: Notes, content: String, title: String, description: String) {
-        note.contentNote = content
-        note.titleNote = title
-        note.descriptionNote = description
-        note.timeCreated = Date()
-        saveNote()
-    }
     
     // Edit
     func editNote(index: IndexPath) -> Notes{
@@ -94,21 +81,23 @@ class NotesListViewModel: NotesListViewModelProtocol {
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         let request: NSFetchRequest<Notes> = Notes.fetchRequest()
         let text = searchText.trimmingCharacters(in: .whitespacesAndNewlines)
-        request.predicate = NSPredicate(format: "titleNote CONTAINS[c] %@", text)
-        do {
-            listNotes =  try context.fetch(request)
-            if listNotes.count == 0 {
-                showAlert = false
-            } else {
-                showAlert = true
+        if text.isEmpty == false {
+            request.predicate = NSPredicate(format: "titleNote CONTAINS[cd] %@", text)
+            do {
+                listNotes =  try context.fetch(request)
+                if listNotes.count == 0 {
+                    showAlert = false
+                } else {
+                    showAlert = true
+                }
+            } catch {
+                print("error: \(error)")
             }
-        } catch {
-            print("error: \(error)")
-        }
-        if searchText.count == 0 {
+        } else {
             loadListNote()
             showAlert = true
         }
+        
         updateNoteCountLabel()
         reloadUI?()
     }

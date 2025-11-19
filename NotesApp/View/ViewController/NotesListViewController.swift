@@ -18,13 +18,14 @@ class NotesListViewController: UIViewController {
     
     @IBOutlet weak var noteCountLable: UILabel!
     
-    let viewModel = NotesListViewModel()
+    var viewModel: NotesListViewModelProtocol!
     
     let searchController = UISearchController(searchResultsController: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        viewModel = NotesListViewModel()
         setupSearchBar()
         setuptableView()
         imgAlert.isHidden = true
@@ -34,9 +35,11 @@ class NotesListViewController: UIViewController {
         addNewNoteButton.tintColor = .systemYellow
         viewModel.loadListNote()
         noteCountLable.text = "\(viewModel.noteCount ?? 0) Notes"
+        
         viewModel.reloadUI = {
             self.noteCountLable.text = "\(self.viewModel.noteCount ?? 0) Notes"
         }
+        
     }
     
     
@@ -45,7 +48,6 @@ class NotesListViewController: UIViewController {
             viewModel.loadListNote()
             noteTableView.reloadData()
             noteCountLable.text = "\(viewModel.noteCount ?? 0) Notes"
-
       }
     
     func setupSearchBar(){
@@ -57,6 +59,7 @@ class NotesListViewController: UIViewController {
         navigationItem.searchController?.searchBar.delegate = self
         
     }
+    
     func setuptableView(){
         noteTableView.separatorStyle = .none
         noteTableView.delegate = self
@@ -70,8 +73,9 @@ class NotesListViewController: UIViewController {
     @IBAction func addNewNodeButtonPressed(_ sender: Any) {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let vc = sb.instantiateViewController(identifier: "noteDetailViewController") as! NoteDetailViewController
-        vc.viewModel.onAdd = { note in
-            self.viewModel.addNote( note)
+        vc.viewModel = NoteDetailViewModel()
+        vc.viewModel.reloadUI = {
+            self.noteTableView.reloadData()
         }
         navigationController?.pushViewController(vc, animated: true)
     }
@@ -97,17 +101,12 @@ extension NotesListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let vc = sb.instantiateViewController(identifier: "noteDetailViewController") as! NoteDetailViewController
+        vc.viewModel = NoteDetailViewModel()
         vc.noteEdit = viewModel.editNote(index: indexPath)
         
-        vc.viewModel.onUpdate = { note, contentNote, titleNote, descriptionNote in
-            self.viewModel.updateNote(note, content: contentNote, title: titleNote, description: descriptionNote)
-        }
-        vc.viewModel.onDelete = {
-            self.viewModel.deleteNote(at: indexPath)
-        }
-        
-        
+
         navigationController?.pushViewController(vc, animated: true)
+        
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 85
@@ -122,11 +121,10 @@ extension NotesListViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-// MARK: SerachBar Method
+// MARK: SearchBar Method
 
 extension NotesListViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        print(searchText)
         viewModel.searchNotes(searchText)
         noteTableView.reloadData()
         imgAlert.isHidden = viewModel.showAlert

@@ -8,7 +8,8 @@
 import UIKit
 
 class NoteDetailViewController: UIViewController {
-    let viewModel = NoteDetailViewModel()
+    
+    var viewModel: NoteDetailViewModelProtocol!
     var noteEdit: Notes?
     
     @IBOutlet weak var textViewNote: UITextView!
@@ -17,8 +18,9 @@ class NoteDetailViewController: UIViewController {
         super.viewDidLoad()
         navigationController?.navigationBar.tintColor = .systemYellow
         textViewNote.delegate = self
-        self.textViewNote.text = self.viewModel.loadNoteData(noteEdit: self.noteEdit)
+        self.textViewNote.text = self.viewModel?.loadNoteData(noteEdit: self.noteEdit)
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         textViewNote.becomeFirstResponder()
@@ -29,7 +31,7 @@ class NoteDetailViewController: UIViewController {
         super.viewWillDisappear(animated)
         
         if self.isMovingFromParent {
-            viewModel.handleDataNoteDetail(noteEdit: noteEdit, contentNote: textViewNote.text)
+            viewModel?.handleDataNoteDetail(noteEdit: noteEdit, contentNote: textViewNote.text)
 
         }
     }

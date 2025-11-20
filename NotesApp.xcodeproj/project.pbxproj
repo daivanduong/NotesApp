@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F0C36E22ECDB5840042CF2A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5F0C36E12ECDB5840042CF2A /* README.md */; };
 		8E3E89982E7EACFE00D8A79D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E89972E7EACFE00D8A79D /* AppDelegate.swift */; };
 		8E3E899A2E7EACFE00D8A79D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E89992E7EACFE00D8A79D /* SceneDelegate.swift */; };
 		8E3E899C2E7EACFE00D8A79D /* NotesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E899B2E7EACFE00D8A79D /* NotesListViewController.swift */; };
 		8E3E899F2E7EACFE00D8A79D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E899E2E7EACFE00D8A79D /* Base */; };
-		8E3E89A22E7EACFE00D8A79D /* NotesApp_MVVM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E89A02E7EACFE00D8A79D /* NotesApp_MVVM.xcdatamodeld */; };
+		8E3E89A22E7EACFE00D8A79D /* NotesApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E89A02E7EACFE00D8A79D /* NotesApp.xcdatamodeld */; };
 		8E3E89A42E7EAD0000D8A79D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E89A32E7EAD0000D8A79D /* Assets.xcassets */; };
 		8E3E89A72E7EAD0000D8A79D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E89A62E7EAD0000D8A79D /* Base */; };
-		8E3E89B22E7EAD0100D8A79D /* NotesApp_MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E89B12E7EAD0100D8A79D /* NotesApp_MVVMTests.swift */; };
-		8E3E89BC2E7EAD0100D8A79D /* NotesApp_MVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E89BB2E7EAD0100D8A79D /* NotesApp_MVVMUITests.swift */; };
-		8E3E89BE2E7EAD0100D8A79D /* NotesApp_MVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E89BD2E7EAD0100D8A79D /* NotesApp_MVVMUITestsLaunchTests.swift */; };
+		8E3E89B22E7EAD0100D8A79D /* NotesApp_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E89B12E7EAD0100D8A79D /* NotesApp_Tests.swift */; };
+		8E3E89BC2E7EAD0100D8A79D /* NotesApp_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E89BB2E7EAD0100D8A79D /* NotesApp_UITests.swift */; };
+		8E3E89BE2E7EAD0100D8A79D /* NotesApp_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E89BD2E7EAD0100D8A79D /* NotesApp_UITestsLaunchTests.swift */; };
 		8E3E89D02E7EAEDF00D8A79D /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E89CF2E7EAEDF00D8A79D /* NoteDetailViewController.swift */; };
 		8E3E89D32E7EAF3000D8A79D /* NoteViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E89D12E7EAF3000D8A79D /* NoteViewCell.swift */; };
 		8E3E89D42E7EAF3000D8A79D /* NoteViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E89D22E7EAF3000D8A79D /* NoteViewCell.xib */; };
@@ -45,20 +46,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8E3E89942E7EACFE00D8A79D /* NotesApp-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NotesApp-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F0C36E12ECDB5840042CF2A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8E3E89942E7EACFE00D8A79D /* NotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E3E89972E7EACFE00D8A79D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E3E89992E7EACFE00D8A79D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8E3E899B2E7EACFE00D8A79D /* NotesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListViewController.swift; sourceTree = "<group>"; };
 		8E3E899E2E7EACFE00D8A79D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8E3E89A12E7EACFE00D8A79D /* NotesApp_MVVM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotesApp_MVVM.xcdatamodel; sourceTree = "<group>"; };
+		8E3E89A12E7EACFE00D8A79D /* NotesApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotesApp.xcdatamodel; sourceTree = "<group>"; };
 		8E3E89A32E7EAD0000D8A79D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E3E89A62E7EAD0000D8A79D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E3E89A82E7EAD0000D8A79D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E3E89AD2E7EAD0100D8A79D /* NotesApp-MVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NotesApp-MVVMTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E3E89B12E7EAD0100D8A79D /* NotesApp_MVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp_MVVMTests.swift; sourceTree = "<group>"; };
-		8E3E89B72E7EAD0100D8A79D /* NotesApp-MVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NotesApp-MVVMUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E3E89BB2E7EAD0100D8A79D /* NotesApp_MVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp_MVVMUITests.swift; sourceTree = "<group>"; };
-		8E3E89BD2E7EAD0100D8A79D /* NotesApp_MVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp_MVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8E3E89AD2E7EAD0100D8A79D /* NotesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E3E89B12E7EAD0100D8A79D /* NotesApp_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp_Tests.swift; sourceTree = "<group>"; };
+		8E3E89B72E7EAD0100D8A79D /* NotesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E3E89BB2E7EAD0100D8A79D /* NotesApp_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp_UITests.swift; sourceTree = "<group>"; };
+		8E3E89BD2E7EAD0100D8A79D /* NotesApp_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp_UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8E3E89CF2E7EAEDF00D8A79D /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
 		8E3E89D12E7EAF3000D8A79D /* NoteViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewCell.swift; sourceTree = "<group>"; };
 		8E3E89D22E7EAF3000D8A79D /* NoteViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteViewCell.xib; sourceTree = "<group>"; };
@@ -97,25 +99,26 @@
 		8E3E898B2E7EACFD00D8A79D = {
 			isa = PBXGroup;
 			children = (
-				8E3E89962E7EACFE00D8A79D /* NotesApp-MVVM */,
-				8E3E89B02E7EAD0100D8A79D /* NotesApp-MVVMTests */,
-				8E3E89BA2E7EAD0100D8A79D /* NotesApp-MVVMUITests */,
+				8E3E89962E7EACFE00D8A79D /* NotesApp */,
+				8E3E89B02E7EAD0100D8A79D /* NotesApp-Tests */,
+				8E3E89BA2E7EAD0100D8A79D /* NotesApp-UITests */,
 				8E3E89952E7EACFE00D8A79D /* Products */,
 				8EFCB1A12E83A53900785EC3 /* Frameworks */,
+				5F0C36E12ECDB5840042CF2A /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
 		8E3E89952E7EACFE00D8A79D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8E3E89942E7EACFE00D8A79D /* NotesApp-MVVM.app */,
-				8E3E89AD2E7EAD0100D8A79D /* NotesApp-MVVMTests.xctest */,
-				8E3E89B72E7EAD0100D8A79D /* NotesApp-MVVMUITests.xctest */,
+				8E3E89942E7EACFE00D8A79D /* NotesApp.app */,
+				8E3E89AD2E7EAD0100D8A79D /* NotesAppTests.xctest */,
+				8E3E89B72E7EAD0100D8A79D /* NotesAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8E3E89962E7EACFE00D8A79D /* NotesApp-MVVM */ = {
+		8E3E89962E7EACFE00D8A79D /* NotesApp */ = {
 			isa = PBXGroup;
 			children = (
 				8E3E89CA2E7EAD4200D8A79D /* View */,
@@ -126,24 +129,24 @@
 				8E3E89A32E7EAD0000D8A79D /* Assets.xcassets */,
 				8E3E89A82E7EAD0000D8A79D /* Info.plist */,
 			);
-			path = "NotesApp-MVVM";
+			path = NotesApp;
 			sourceTree = "<group>";
 		};
-		8E3E89B02E7EAD0100D8A79D /* NotesApp-MVVMTests */ = {
+		8E3E89B02E7EAD0100D8A79D /* NotesApp-Tests */ = {
 			isa = PBXGroup;
 			children = (
-				8E3E89B12E7EAD0100D8A79D /* NotesApp_MVVMTests.swift */,
+				8E3E89B12E7EAD0100D8A79D /* NotesApp_Tests.swift */,
 			);
-			path = "NotesApp-MVVMTests";
+			path = "NotesApp-Tests";
 			sourceTree = "<group>";
 		};
-		8E3E89BA2E7EAD0100D8A79D /* NotesApp-MVVMUITests */ = {
+		8E3E89BA2E7EAD0100D8A79D /* NotesApp-UITests */ = {
 			isa = PBXGroup;
 			children = (
-				8E3E89BB2E7EAD0100D8A79D /* NotesApp_MVVMUITests.swift */,
-				8E3E89BD2E7EAD0100D8A79D /* NotesApp_MVVMUITestsLaunchTests.swift */,
+				8E3E89BB2E7EAD0100D8A79D /* NotesApp_UITests.swift */,
+				8E3E89BD2E7EAD0100D8A79D /* NotesApp_UITestsLaunchTests.swift */,
 			);
-			path = "NotesApp-MVVMUITests";
+			path = "NotesApp-UITests";
 			sourceTree = "<group>";
 		};
 		8E3E89CA2E7EAD4200D8A79D /* View */ = {
@@ -160,7 +163,7 @@
 		8E3E89CB2E7EAD4C00D8A79D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8E3E89A02E7EACFE00D8A79D /* NotesApp_MVVM.xcdatamodeld */,
+				8E3E89A02E7EACFE00D8A79D /* NotesApp.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -220,9 +223,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8E3E89932E7EACFE00D8A79D /* NotesApp-MVVM */ = {
+		8E3E89932E7EACFE00D8A79D /* NotesApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8E3E89C12E7EAD0100D8A79D /* Build configuration list for PBXNativeTarget "NotesApp-MVVM" */;
+			buildConfigurationList = 8E3E89C12E7EAD0100D8A79D /* Build configuration list for PBXNativeTarget "NotesApp" */;
 			buildPhases = (
 				8E3E89902E7EACFE00D8A79D /* Sources */,
 				8E3E89912E7EACFE00D8A79D /* Frameworks */,
@@ -232,17 +235,17 @@
 			);
 			dependencies = (
 			);
-			name = "NotesApp-MVVM";
+			name = NotesApp;
 			packageProductDependencies = (
 				8EFCB1A22E83A53900785EC3 /* IQKeyboardManagerSwift */,
 			);
 			productName = "NotesApp-MVVM";
-			productReference = 8E3E89942E7EACFE00D8A79D /* NotesApp-MVVM.app */;
+			productReference = 8E3E89942E7EACFE00D8A79D /* NotesApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8E3E89AC2E7EAD0100D8A79D /* NotesApp-MVVMTests */ = {
+		8E3E89AC2E7EAD0100D8A79D /* NotesAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8E3E89C42E7EAD0100D8A79D /* Build configuration list for PBXNativeTarget "NotesApp-MVVMTests" */;
+			buildConfigurationList = 8E3E89C42E7EAD0100D8A79D /* Build configuration list for PBXNativeTarget "NotesAppTests" */;
 			buildPhases = (
 				8E3E89A92E7EAD0100D8A79D /* Sources */,
 				8E3E89AA2E7EAD0100D8A79D /* Frameworks */,
@@ -253,14 +256,14 @@
 			dependencies = (
 				8E3E89AF2E7EAD0100D8A79D /* PBXTargetDependency */,
 			);
-			name = "NotesApp-MVVMTests";
+			name = NotesAppTests;
 			productName = "NotesApp-MVVMTests";
-			productReference = 8E3E89AD2E7EAD0100D8A79D /* NotesApp-MVVMTests.xctest */;
+			productReference = 8E3E89AD2E7EAD0100D8A79D /* NotesAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8E3E89B62E7EAD0100D8A79D /* NotesApp-MVVMUITests */ = {
+		8E3E89B62E7EAD0100D8A79D /* NotesAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8E3E89C72E7EAD0100D8A79D /* Build configuration list for PBXNativeTarget "NotesApp-MVVMUITests" */;
+			buildConfigurationList = 8E3E89C72E7EAD0100D8A79D /* Build configuration list for PBXNativeTarget "NotesAppUITests" */;
 			buildPhases = (
 				8E3E89B32E7EAD0100D8A79D /* Sources */,
 				8E3E89B42E7EAD0100D8A79D /* Frameworks */,
@@ -271,9 +274,9 @@
 			dependencies = (
 				8E3E89B92E7EAD0100D8A79D /* PBXTargetDependency */,
 			);
-			name = "NotesApp-MVVMUITests";
+			name = NotesAppUITests;
 			productName = "NotesApp-MVVMUITests";
-			productReference = 8E3E89B72E7EAD0100D8A79D /* NotesApp-MVVMUITests.xctest */;
+			productReference = 8E3E89B72E7EAD0100D8A79D /* NotesAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -284,7 +287,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					8E3E89932E7EACFE00D8A79D = {
 						CreatedOnToolsVersion = 15.4;
@@ -299,7 +302,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8E3E898F2E7EACFD00D8A79D /* Build configuration list for PBXProject "NotesApp-MVVM" */;
+			buildConfigurationList = 8E3E898F2E7EACFD00D8A79D /* Build configuration list for PBXProject "NotesApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -315,9 +318,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8E3E89932E7EACFE00D8A79D /* NotesApp-MVVM */,
-				8E3E89AC2E7EAD0100D8A79D /* NotesApp-MVVMTests */,
-				8E3E89B62E7EAD0100D8A79D /* NotesApp-MVVMUITests */,
+				8E3E89932E7EACFE00D8A79D /* NotesApp */,
+				8E3E89AC2E7EAD0100D8A79D /* NotesAppTests */,
+				8E3E89B62E7EAD0100D8A79D /* NotesAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -329,6 +332,7 @@
 			files = (
 				8E3E89A42E7EAD0000D8A79D /* Assets.xcassets in Resources */,
 				8E3E89A72E7EAD0000D8A79D /* Base in Resources */,
+				5F0C36E22ECDB5840042CF2A /* README.md in Resources */,
 				8E3E89D42E7EAF3000D8A79D /* NoteViewCell.xib in Resources */,
 				8E3E899F2E7EACFE00D8A79D /* Base in Resources */,
 			);
@@ -356,7 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E3E899C2E7EACFE00D8A79D /* NotesListViewController.swift in Sources */,
-				8E3E89A22E7EACFE00D8A79D /* NotesApp_MVVM.xcdatamodeld in Sources */,
+				8E3E89A22E7EACFE00D8A79D /* NotesApp.xcdatamodeld in Sources */,
 				8E3E89D92E7EAFF100D8A79D /* NotesListViewModelProtocol.swift in Sources */,
 				8E3E89D02E7EAEDF00D8A79D /* NoteDetailViewController.swift in Sources */,
 				8E3E89982E7EACFE00D8A79D /* AppDelegate.swift in Sources */,
@@ -372,7 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E3E89B22E7EAD0100D8A79D /* NotesApp_MVVMTests.swift in Sources */,
+				8E3E89B22E7EAD0100D8A79D /* NotesApp_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,8 +384,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E3E89BE2E7EAD0100D8A79D /* NotesApp_MVVMUITestsLaunchTests.swift in Sources */,
-				8E3E89BC2E7EAD0100D8A79D /* NotesApp_MVVMUITests.swift in Sources */,
+				8E3E89BE2E7EAD0100D8A79D /* NotesApp_UITestsLaunchTests.swift in Sources */,
+				8E3E89BC2E7EAD0100D8A79D /* NotesApp_UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,12 +394,12 @@
 /* Begin PBXTargetDependency section */
 		8E3E89AF2E7EAD0100D8A79D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8E3E89932E7EACFE00D8A79D /* NotesApp-MVVM */;
+			target = 8E3E89932E7EACFE00D8A79D /* NotesApp */;
 			targetProxy = 8E3E89AE2E7EAD0100D8A79D /* PBXContainerItemProxy */;
 		};
 		8E3E89B92E7EAD0100D8A79D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8E3E89932E7EACFE00D8A79D /* NotesApp-MVVM */;
+			target = 8E3E89932E7EACFE00D8A79D /* NotesApp */;
 			targetProxy = 8E3E89B82E7EAD0100D8A79D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -548,7 +552,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7JG62S5C39;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "NotesApp-MVVM/Info.plist";
+				INFOPLIST_FILE = NotesApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -577,7 +581,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7JG62S5C39;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "NotesApp-MVVM/Info.plist";
+				INFOPLIST_FILE = NotesApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -589,7 +593,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ocean.NotesApp-MVVM";
+				PRODUCT_BUNDLE_IDENTIFIER = ocean.NotesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -600,7 +604,6 @@
 		8E3E89C52E7EAD0100D8A79D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -613,14 +616,13 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotesApp-MVVM.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NotesApp-MVVM";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotesApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NotesApp";
 			};
 			name = Debug;
 		};
 		8E3E89C62E7EAD0100D8A79D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -633,14 +635,13 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotesApp-MVVM.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NotesApp-MVVM";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotesApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NotesApp";
 			};
 			name = Release;
 		};
 		8E3E89C82E7EAD0100D8A79D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7JG62S5C39;
@@ -658,7 +659,6 @@
 		8E3E89C92E7EAD0100D8A79D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7JG62S5C39;
@@ -676,7 +676,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8E3E898F2E7EACFD00D8A79D /* Build configuration list for PBXProject "NotesApp-MVVM" */ = {
+		8E3E898F2E7EACFD00D8A79D /* Build configuration list for PBXProject "NotesApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8E3E89BF2E7EAD0100D8A79D /* Debug */,
@@ -685,7 +685,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8E3E89C12E7EAD0100D8A79D /* Build configuration list for PBXNativeTarget "NotesApp-MVVM" */ = {
+		8E3E89C12E7EAD0100D8A79D /* Build configuration list for PBXNativeTarget "NotesApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8E3E89C22E7EAD0100D8A79D /* Debug */,
@@ -694,7 +694,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8E3E89C42E7EAD0100D8A79D /* Build configuration list for PBXNativeTarget "NotesApp-MVVMTests" */ = {
+		8E3E89C42E7EAD0100D8A79D /* Build configuration list for PBXNativeTarget "NotesAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8E3E89C52E7EAD0100D8A79D /* Debug */,
@@ -703,7 +703,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8E3E89C72E7EAD0100D8A79D /* Build configuration list for PBXNativeTarget "NotesApp-MVVMUITests" */ = {
+		8E3E89C72E7EAD0100D8A79D /* Build configuration list for PBXNativeTarget "NotesAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8E3E89C82E7EAD0100D8A79D /* Debug */,
@@ -734,13 +734,13 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		8E3E89A02E7EACFE00D8A79D /* NotesApp_MVVM.xcdatamodeld */ = {
+		8E3E89A02E7EACFE00D8A79D /* NotesApp.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				8E3E89A12E7EACFE00D8A79D /* NotesApp_MVVM.xcdatamodel */,
+				8E3E89A12E7EACFE00D8A79D /* NotesApp.xcdatamodel */,
 			);
-			currentVersion = 8E3E89A12E7EACFE00D8A79D /* NotesApp_MVVM.xcdatamodel */;
-			path = NotesApp_MVVM.xcdatamodeld;
+			currentVersion = 8E3E89A12E7EACFE00D8A79D /* NotesApp.xcdatamodel */;
+			path = NotesApp.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

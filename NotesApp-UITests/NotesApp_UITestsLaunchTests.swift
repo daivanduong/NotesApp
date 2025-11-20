@@ -7,7 +7,7 @@
 
 import XCTest
 
-final class NotesApp_MVVMUITestsLaunchTests: XCTestCase {
+final class NotesApp_UITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
